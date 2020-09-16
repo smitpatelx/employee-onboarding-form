@@ -45,7 +45,7 @@ export default {
 }
 
 .menu {
-    @apply bg-white absolute flex flex-wrap flex-col py-2 px-2 shadow-lg top-0 right-0 mt-16 rounded-lg w-48 menu;
+    @apply bg-white absolute flex flex-wrap flex-col py-2 px-2 shadow-lg top-0 right-0 mt-12 rounded-lg w-48 menu;
 
     &::before{
         content: '';
@@ -62,7 +62,7 @@ export default {
     }
 
     a{
-        @apply w-full bg-transparent text-orange-600 ease-in-out font-medium text-sm py-1 px-2 rounded-md transition-all duration-300 text-left;
+        @apply w-full bg-transparent text-orange-600 ease-in-out font-medium text-base py-1 px-3 rounded-md transition-all duration-300 text-left;
 
         &:hover{
             @apply bg-orange-200 transition-all duration-300 ease-in-out;

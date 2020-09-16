@@ -30,6 +30,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -110,10 +112,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      current_date: ''
+      current_date: '',
+      first_name: '',
+      middle_name: '',
+      last_name: '',
+      employment_type: '',
+      sin: ''
     };
   },
   methods: {
@@ -125,7 +140,17 @@ __webpack_require__.r(__webpack_exports__);
       if (day < 10) day = "0" + day;
       this.current_date = now.getFullYear() + '-' + month + '-' + day;
     },
-    submit: function submit() {}
+    submit: function submit() {
+      alert("Submit");
+    },
+    resetForm: function resetForm() {
+      this.getCurrentDate();
+      this.first_name = '';
+      this.middle_name = '';
+      this.last_name = '';
+      this.employment_type = '';
+      this.sin = '';
+    }
   },
   created: function created() {
     this.getCurrentDate();
@@ -162,6 +187,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./src/components/AppLayout.vue?vue&type=style&index=0&lang=scss&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/AppLayout.vue?vue&type=style&index=0&lang=scss& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".max-w-head {\n  max-width: 24rem;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Form.vue?vue&type=style&index=0&lang=scss&":
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Form.vue?vue&type=style&index=0&lang=scss& ***!
@@ -174,7 +218,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "form input {\n  font-size: 1rem;\n  font-weight: 400;\n  width: auto;\n  --text-opacity: 1;\n  color: #2c5282;\n  color: rgba(44, 82, 130, var(--text-opacity));\n}\nform input:focus {\n  outline: 0;\n  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);\n  transition-property: all;\n  transition-duration: 300ms;\n}", ""]);
+exports.push([module.i, "form input, form select {\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  border-radius: 0.25rem;\n  --bg-opacity: 1;\n  background-color: #f7fafc;\n  background-color: rgba(247, 250, 252, var(--bg-opacity));\n  border-width: 1px;\n  --border-opacity: 1;\n  border-color: #cbd5e0;\n  border-color: rgba(203, 213, 224, var(--border-opacity));\n  font-size: 1rem;\n  font-weight: 400;\n  width: auto;\n  --text-opacity: 1;\n  color: #2c5282;\n  color: rgba(44, 82, 130, var(--text-opacity));\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\nform input:focus, form select:focus {\n  outline: 0;\n  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\nform select {\n  height: 2.1rem;\n}\nform button {\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}", ""]);
 
 // exports
 
@@ -193,7 +237,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".c-triangle-left::before {\n  width: 0;\n  height: 0;\n  border: 0;\n  border-right: 0.5em solid currentColor;\n  border-top: 0.5em solid transparent;\n  border-bottom: 0.5em solid transparent;\n}\n@media (min-width: 640px) {\n.sm\\:c-triangle-left {\n    width: 0;\n    height: 0;\n    border: 0;\n    border-right: 0.5em solid currentColor;\n    border-top: 0.5em solid transparent;\n    border-bottom: 0.5em solid transparent;\n}\n}\n.menu {\n  --bg-opacity: 1;\n  background-color: #fff;\n  background-color: rgba(255, 255, 255, var(--bg-opacity));\n  position: absolute;\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: column;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\n  top: 0;\n  right: 0;\n  margin-top: 4rem;\n  border-radius: 0.5rem;\n  width: 12rem;\n@apply bg-white absolute flex flex-wrap flex-col py-2 px-2 shadow-lg top-0 right-0 mt-16 rounded-lg w-48 menu;\n}\n.menu::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 0;\n  height: 0;\n  margin-top: -10px;\n  margin-right: 10px;\n  border-left: 10px solid transparent;\n  border-right: 10px solid transparent;\n  border-bottom: 10px solid white;\n}\n.menu a {\n  width: 100%;\n  background-color: transparent;\n  --text-opacity: 1;\n  color: #dd6b20;\n  color: rgba(221, 107, 32, var(--text-opacity));\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  font-weight: 500;\n  font-size: 0.875rem;\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  border-radius: 0.375rem;\n  transition-property: all;\n  transition-duration: 300ms;\n  text-align: left;\n}\n.menu a:hover {\n  --bg-opacity: 1;\n  background-color: #feebc8;\n  background-color: rgba(254, 235, 200, var(--bg-opacity));\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.menu a:focus {\n  outline: 0;\n  --bg-opacity: 1;\n  background-color: #feebc8;\n  background-color: rgba(254, 235, 200, var(--bg-opacity));\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}", ""]);
+exports.push([module.i, ".c-triangle-left::before {\n  width: 0;\n  height: 0;\n  border: 0;\n  border-right: 0.5em solid currentColor;\n  border-top: 0.5em solid transparent;\n  border-bottom: 0.5em solid transparent;\n}\n@media (min-width: 640px) {\n.sm\\:c-triangle-left {\n    width: 0;\n    height: 0;\n    border: 0;\n    border-right: 0.5em solid currentColor;\n    border-top: 0.5em solid transparent;\n    border-bottom: 0.5em solid transparent;\n}\n}\n.menu {\n  --bg-opacity: 1;\n  background-color: #fff;\n  background-color: rgba(255, 255, 255, var(--bg-opacity));\n  position: absolute;\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: column;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\n  top: 0;\n  right: 0;\n  margin-top: 3rem;\n  border-radius: 0.5rem;\n  width: 12rem;\n@apply bg-white absolute flex flex-wrap flex-col py-2 px-2 shadow-lg top-0 right-0 mt-12 rounded-lg w-48 menu;\n}\n.menu::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 0;\n  height: 0;\n  margin-top: -10px;\n  margin-right: 10px;\n  border-left: 10px solid transparent;\n  border-right: 10px solid transparent;\n  border-bottom: 10px solid white;\n}\n.menu a {\n  width: 100%;\n  background-color: transparent;\n  --text-opacity: 1;\n  color: #dd6b20;\n  color: rgba(221, 107, 32, var(--text-opacity));\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  font-weight: 500;\n  font-size: 1rem;\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n  border-radius: 0.375rem;\n  transition-property: all;\n  transition-duration: 300ms;\n  text-align: left;\n}\n.menu a:hover {\n  --bg-opacity: 1;\n  background-color: #feebc8;\n  background-color: rgba(254, 235, 200, var(--bg-opacity));\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.menu a:focus {\n  outline: 0;\n  --bg-opacity: 1;\n  background-color: #feebc8;\n  background-color: rgba(254, 235, 200, var(--bg-opacity));\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}", ""]);
 
 // exports
 
@@ -677,6 +721,36 @@ process.umask = function() { return 0; };
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./src/components/AppLayout.vue?vue&type=style&index=0&lang=scss&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./src/components/AppLayout.vue?vue&type=style&index=0&lang=scss& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/postcss-loader/src??ref--7-2!../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../node_modules/vue-loader/lib??vue-loader-options!./AppLayout.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./src/components/AppLayout.vue?vue&type=style&index=0&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -6210,70 +6284,72 @@ var render = function() {
     "div",
     {
       staticClass:
-        "w-full flex flex-wrap px-4 py-4 font-normal justofy-center items-center"
+        "w-full flex flex-wrap px-2 md:px-4 py-2 md:py-4 font-normal justify-center items-center"
     },
     [
-      _c(
-        "div",
-        {
-          staticClass:
-            "flex flex-wrap w-full items-center justify-between bg-blue-900 rounded-lg shadow-lg px-6 py-3"
-        },
-        [
-          _vm._m(0),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              directives: [
-                {
-                  name: "click-outside",
-                  rawName: "v-click-outside",
-                  value: _vm.close_menu,
-                  expression: "close_menu"
-                }
-              ],
-              staticClass:
-                "text-white hover:text-orange-400 focus:text-orange-400 focus:outline-none select-none rounded-lg py-2 px-2 flex flex-wrap items-center justify-center relative",
-              on: {
-                click: function($event) {
-                  _vm.menuState = !_vm.menuState
-                }
-              }
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticClass: "w-6 h-6 inline-block fill-current",
-                  attrs: { viewBox: "0 0 24 24" }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      "fill-rule": "evenodd",
-                      d:
-                        "M9 6c0-.6.4-1 1-1h10a1 1 0 110 2H10a1 1 0 01-1-1zM3 12c0-.6.4-1 1-1h16a1 1 0 110 2H4a1 1 0 01-1-1zM13 18c0-.6.4-1 1-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z",
-                      "clip-rule": "evenodd"
-                    }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "slide-y-up-transition",
-                [
-                  _vm.menuState
-                    ? _c("Menu", { attrs: { emit_close: _vm.close_menu } })
-                    : _vm._e()
+      _c("div", { staticClass: "max-w-4xl w-full" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "flex flex-wrap w-full items-center justify-between bg-blue-900 rounded-lg shadow-lg px-6 py-3"
+          },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                directives: [
+                  {
+                    name: "click-outside",
+                    rawName: "v-click-outside",
+                    value: _vm.close_menu,
+                    expression: "close_menu"
+                  }
                 ],
-                1
-              )
-            ],
-            1
-          )
-        ]
-      ),
+                staticClass:
+                  "text-white hover:text-orange-400 focus:text-orange-400 focus:outline-none select-none rounded-lg py-2 px-2 flex flex-wrap items-center justify-center relative",
+                on: {
+                  click: function($event) {
+                    _vm.menuState = !_vm.menuState
+                  }
+                }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "w-6 h-6 inline-block fill-current",
+                    attrs: { viewBox: "0 0 24 24" }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        "fill-rule": "evenodd",
+                        d:
+                          "M9 6c0-.6.4-1 1-1h10a1 1 0 110 2H10a1 1 0 01-1-1zM3 12c0-.6.4-1 1-1h16a1 1 0 110 2H4a1 1 0 01-1-1zM13 18c0-.6.4-1 1-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z",
+                        "clip-rule": "evenodd"
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "slide-y-up-transition",
+                  [
+                    _vm.menuState
+                      ? _c("Menu", { attrs: { emit_close: _vm.close_menu } })
+                      : _vm._e()
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ]
+        )
+      ]),
       _vm._v(" "),
       _c("Form")
     ],
@@ -6285,7 +6361,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "https://blabbly.com" } }, [
+    return _c("a", { attrs: { href: "/" } }, [
       _c("img", {
         staticClass: "h-10 inline-block mr-3",
         attrs: { src: "/assets/logo.png", alt: "Blabbly Ltd." }
@@ -6337,33 +6413,168 @@ var render = function() {
           _c(
             "form",
             {
+              ref: "emp_frm",
               staticClass:
-                "w-full py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2",
+                "w-full py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 row-gap-6 col-gap-2",
               on: {
-                keyup: function($event) {
-                  if (
-                    !$event.type.indexOf("key") &&
-                    _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
-                  ) {
-                    return null
-                  }
+                submit: function($event) {
+                  $event.preventDefault()
                   return _vm.submit($event)
                 },
-                submit: _vm.submit
+                reset: function($event) {
+                  $event.preventDefault()
+                  return _vm.resetForm($event)
+                }
               }
             },
             [
-              _vm._m(0),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _vm._m(2),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
+                },
+                [
+                  _c(
+                    "label",
+                    {
+                      staticClass:
+                        "text-gray-600 text-sm font-medium mb-1 pl-1",
+                      attrs: { for: "first_name" }
+                    },
+                    [_vm._v("First Name")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.first_name,
+                        expression: "first_name"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      autofocus: "",
+                      type: "text",
+                      id: "first_name",
+                      placeholder: "First Name"
+                    },
+                    domProps: { value: _vm.first_name },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.first_name = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
               _vm._v(" "),
               _c(
                 "div",
                 {
                   staticClass:
-                    "flex flex-wrap flex-col items-cetner justify-start  grid-col-1"
+                    "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
+                },
+                [
+                  _c(
+                    "label",
+                    {
+                      staticClass:
+                        "text-gray-600 text-sm font-medium mb-1 pl-1",
+                      attrs: { for: "middle_name" }
+                    },
+                    [_vm._v("Middle Name")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.middle_name,
+                        expression: "middle_name"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "middle_name",
+                      placeholder: "Middle Name"
+                    },
+                    domProps: { value: _vm.middle_name },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.middle_name = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
+                },
+                [
+                  _c(
+                    "label",
+                    {
+                      staticClass:
+                        "text-gray-600 text-sm font-medium mb-1 pl-1",
+                      attrs: { for: "last_name" }
+                    },
+                    [_vm._v("Last Name")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.last_name,
+                        expression: "last_name"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "last_name",
+                      placeholder: "Last Name"
+                    },
+                    domProps: { value: _vm.last_name },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.last_name = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
                 },
                 [
                   _c(
@@ -6377,17 +6588,191 @@ var render = function() {
                   ),
                   _vm._v(" "),
                   _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.current_date,
+                        expression: "current_date"
+                      }
+                    ],
                     staticClass:
                       "py-1 px-2 rounded bg-gray-100 border border-gray-400",
-                    attrs: { type: "date", id: "starting_date" },
-                    domProps: { value: _vm.current_date }
+                    attrs: { required: "", type: "date", id: "starting_date" },
+                    domProps: { value: _vm.current_date },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.current_date = $event.target.value
+                      }
+                    }
                   })
                 ]
               ),
               _vm._v(" "),
-              _vm._m(3),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
+                },
+                [
+                  _c(
+                    "label",
+                    {
+                      staticClass:
+                        "text-gray-600 text-sm font-medium mb-1 pl-1",
+                      attrs: { for: "employment_type" }
+                    },
+                    [_vm._v("Employment Type")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.employment_type,
+                          expression: "employment_type"
+                        }
+                      ],
+                      staticClass:
+                        "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                      attrs: {
+                        required: "",
+                        type: "text",
+                        id: "employment_type"
+                      },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.employment_type = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c("option", { attrs: { value: "", default: "" } }, [
+                        _vm._v("Please Select")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "1" } }, [
+                        _vm._v("Hourly")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "2" } }, [
+                        _vm._v("Hourly")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "3" } }, [
+                        _vm._v("Contract")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "4" } }, [_vm._v("Term")]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "5" } }, [
+                        _vm._v("Internship")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "6" } }, [
+                        _vm._v("Work Placement")
+                      ])
+                    ]
+                  )
+                ]
+              ),
               _vm._v(" "),
-              _vm._m(4)
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
+                },
+                [
+                  _c(
+                    "label",
+                    {
+                      staticClass:
+                        "text-gray-600 text-sm font-medium mb-1 pl-1",
+                      attrs: { for: "sin_number" }
+                    },
+                    [_vm._v("SIN Number: 9 Digits")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.sin,
+                        expression: "sin"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      pattern: "[0-9]{9}",
+                      minlength: "9",
+                      maxlength: "9",
+                      id: "sin_number",
+                      placeholder: "SIN Number"
+                    },
+                    domProps: { value: _vm.sin },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.sin = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-row items-center justify-center col-span-1 md:col-span-2 lg:col-span-3 mt-4"
+                },
+                [
+                  _c(
+                    "button",
+                    {
+                      ref: "submitBtn",
+                      staticClass:
+                        "py-2 px-5 rounded-lg bg-orange-600 hover:bg-orange-500 focus:bg-orange-500 focus:outline-none focus:shadow-outline text-white text-lg font-normal",
+                      attrs: { type: "submit" }
+                    },
+                    [_vm._v("\n                    Submit\n                ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "py-2 px-5 ml-3 rounded-lg bg-transparent hover:bg-orange-300 focus:bg-orange-300 text-orange-600 hover:text-orange-700 focus:text-orange-700 focus:outline-none focus:shadow-outline text-lg font-normal",
+                      attrs: { type: "reset" }
+                    },
+                    [_vm._v("\n                    Reset\n                ")]
+                  )
+                ]
+              )
             ]
           )
         ]
@@ -6395,170 +6780,7 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "flex flex-wrap flex-col items-cetner justify-start  grid-col-1"
-      },
-      [
-        _c(
-          "label",
-          {
-            staticClass: "text-gray-600 text-sm font-medium mb-1 pl-1",
-            attrs: { for: "first_name" }
-          },
-          [_vm._v("First Name")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "py-1 px-2 rounded bg-gray-100 border border-gray-400",
-          attrs: { type: "text", id: "first_name", placeholder: "First Name" }
-        })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "flex flex-wrap flex-col items-cetner justify-start  grid-col-1"
-      },
-      [
-        _c(
-          "label",
-          {
-            staticClass: "text-gray-600 text-sm font-medium mb-1 pl-1",
-            attrs: { for: "middle_name" }
-          },
-          [_vm._v("Middle Name")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "py-1 px-2 rounded bg-gray-100 border border-gray-400",
-          attrs: { type: "text", id: "middle_name", placeholder: "Middle Name" }
-        })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "flex flex-wrap flex-col items-cetner justify-start  grid-col-1"
-      },
-      [
-        _c(
-          "label",
-          {
-            staticClass: "text-gray-600 text-sm font-medium mb-1 pl-1",
-            attrs: { for: "last_name" }
-          },
-          [_vm._v("Last Name")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "py-1 px-2 rounded bg-gray-100 border border-gray-400",
-          attrs: { type: "text", id: "last_name", placeholder: "Last Name" }
-        })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "flex flex-wrap flex-col items-cetner justify-start  grid-col-1"
-      },
-      [
-        _c(
-          "label",
-          {
-            staticClass: "text-gray-600 text-sm font-medium mb-1 pl-1",
-            attrs: { for: "employment_type" }
-          },
-          [_vm._v("Employment Type")]
-        ),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass: "py-1 px-2 rounded bg-gray-100 border border-gray-400",
-            attrs: { type: "text", id: "employment_type" }
-          },
-          [
-            _c("option", { attrs: { value: "", default: "", disabled: "" } }, [
-              _vm._v("Please Select")
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "1" } }, [_vm._v("Hourly")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "2" } }, [_vm._v("Hourly")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "3" } }, [_vm._v("Contract")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "4" } }, [_vm._v("Term")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "5" } }, [_vm._v("Internship")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "6" } }, [_vm._v("Work Placement")])
-          ]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "flex flex-wrap flex-col items-cetner justify-start  grid-col-1"
-      },
-      [
-        _c(
-          "label",
-          {
-            staticClass: "text-gray-600 text-sm font-medium mb-1 pl-1",
-            attrs: { for: "sin_number" }
-          },
-          [_vm._v("SIN Number")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "py-1 px-2 rounded bg-gray-100 border border-gray-400",
-          attrs: {
-            type: "text",
-            pattern: "[0-9]{9}",
-            minlength: "9",
-            maxlength: "9",
-            id: "sin_number",
-            placeholder: "SIN Number"
-          }
-        })
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -8504,7 +8726,9 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AppLayout_vue_vue_type_template_id_40d62f2b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppLayout.vue?vue&type=template&id=40d62f2b& */ "./src/components/AppLayout.vue?vue&type=template&id=40d62f2b&");
 /* harmony import */ var _AppLayout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppLayout.vue?vue&type=script&lang=js& */ "./src/components/AppLayout.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _AppLayout_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AppLayout.vue?vue&type=style&index=0&lang=scss& */ "./src/components/AppLayout.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -8512,7 +8736,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _AppLayout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _AppLayout_vue_vue_type_template_id_40d62f2b___WEBPACK_IMPORTED_MODULE_0__["render"],
   _AppLayout_vue_vue_type_template_id_40d62f2b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -8541,6 +8765,22 @@ component.options.__file = "src/components/AppLayout.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppLayout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./AppLayout.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/AppLayout.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AppLayout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/AppLayout.vue?vue&type=style&index=0&lang=scss&":
+/*!************************************************************************!*\
+  !*** ./src/components/AppLayout.vue?vue&type=style&index=0&lang=scss& ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppLayout_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/style-loader!../../node_modules/css-loader!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/postcss-loader/src??ref--7-2!../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../node_modules/vue-loader/lib??vue-loader-options!./AppLayout.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./src/components/AppLayout.vue?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppLayout_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppLayout_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppLayout_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppLayout_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_AppLayout_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
