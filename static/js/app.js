@@ -120,6 +120,121 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -128,7 +243,26 @@ __webpack_require__.r(__webpack_exports__);
       middle_name: '',
       last_name: '',
       employment_type: '',
-      sin: ''
+      sin: '',
+      position: '',
+      gender: '',
+      dob: '',
+      address: '',
+      province: '',
+      city: '',
+      zip: '',
+      phone: '',
+      email: '',
+      branch_address: '',
+      branch_city: '',
+      branch_province: '',
+      branch_postal_code: '',
+      transit: '',
+      institution_number: '',
+      account_number: '',
+      q_u_l_b: '',
+      t_w_t_d_y: '',
+      s_b: ''
     };
   },
   methods: {
@@ -150,6 +284,25 @@ __webpack_require__.r(__webpack_exports__);
       this.last_name = '';
       this.employment_type = '';
       this.sin = '';
+      this.position = '';
+      this.gender = '';
+      this.dob = '';
+      this.address = '';
+      this.province = '';
+      this.city = '';
+      this.zip = '';
+      this.phone = '';
+      this.email = '';
+      this.branch_address = '';
+      this.branch_city = '';
+      this.branch_province = '';
+      this.branch_postal_code = '';
+      this.transit = '';
+      this.institution_number = '';
+      this.account_number = '';
+      this.q_u_l_b = '';
+      this.t_w_t_d_y = '';
+      this.s_b = '';
     }
   },
   created: function created() {
@@ -168,6 +321,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -218,7 +374,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "form input, form select {\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  border-radius: 0.25rem;\n  --bg-opacity: 1;\n  background-color: #f7fafc;\n  background-color: rgba(247, 250, 252, var(--bg-opacity));\n  border-width: 1px;\n  --border-opacity: 1;\n  border-color: #cbd5e0;\n  border-color: rgba(203, 213, 224, var(--border-opacity));\n  font-size: 1rem;\n  font-weight: 400;\n  width: auto;\n  --text-opacity: 1;\n  color: #2c5282;\n  color: rgba(44, 82, 130, var(--text-opacity));\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\nform input:focus, form select:focus {\n  outline: 0;\n  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\nform select {\n  height: 2.1rem;\n}\nform button {\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}", ""]);
+exports.push([module.i, "form input, form select, form textarea {\n  padding-top: 0.25rem;\n  padding-bottom: 0.25rem;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  border-radius: 0.25rem;\n  --bg-opacity: 1;\n  background-color: #f7fafc;\n  background-color: rgba(247, 250, 252, var(--bg-opacity));\n  border-width: 1px;\n  --border-opacity: 1;\n  border-color: #cbd5e0;\n  border-color: rgba(203, 213, 224, var(--border-opacity));\n  font-size: 1rem;\n  font-weight: 400;\n  width: auto;\n  --text-opacity: 1;\n  color: #2c5282;\n  color: rgba(44, 82, 130, var(--text-opacity));\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\nform input:focus, form select:focus, form textarea:focus {\n  outline: 0;\n  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\nform select {\n  height: 2.1rem;\n}\nform textarea {\n  min-height: 6rem;\n}\nform button {\n  transition-property: all;\n  transition-duration: 300ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\nform label {\n  --text-opacity: 1;\n  color: #718096;\n  color: rgba(113, 128, 150, var(--text-opacity));\n  font-size: 0.875rem;\n  font-weight: 500;\n  margin-bottom: 0.25rem;\n  padding-left: 0.25rem;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\nform .divide-form {\n  width: 100%;\n  border-bottom-width: 1px;\n  --border-opacity: 1;\n  border-color: #a0aec0;\n  border-color: rgba(160, 174, 192, var(--border-opacity));\n  grid-column: span 1 / span 1;\n  margin-top: 0.75rem;\n  margin-bottom: 0.75rem;\n}\n@media (min-width: 768px) {\nform .divide-form {\n    grid-column: span 2 / span 2;\n}\n}\n@media (min-width: 1024px) {\nform .divide-form {\n    grid-column: span 3 / span 3;\n}\n}\nform .form_subtitle {\n  width: 100%;\n  text-align: left;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: flex-start;\n  font-size: 1rem;\n  font-weight: 500;\n  --text-opacity: 1;\n  color: #2b6cb0;\n  color: rgba(43, 108, 176, var(--text-opacity));\n  grid-column: span 1 / span 1;\n  margin-top: 0.75rem;\n  margin-bottom: -0.75rem;\n}\nform .form_subtitle span:nth-child(1) {\n  margin-right: 0.5rem;\n  --text-opacity: 1;\n  color: #a0aec0;\n  color: rgba(160, 174, 192, var(--text-opacity));\n  font-size: 1rem;\n  font-weight: 500;\n  font-family: Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n  line-height: 1.25;\n  align-self: flex-end;\n}\nform .form_subtitle span:nth-child(2) {\n  --text-opacity: 1;\n  color: #ed8936;\n  color: rgba(237, 137, 54, var(--text-opacity));\n  font-size: 1.25rem;\n  font-weight: 700;\n  line-height: 1.25;\n  align-self: center;\n}\nform .form_subtitle span:nth-child(3) {\n  flex: 1 1 auto;\n  --bg-opacity: 1;\n  background-color: #ed8936;\n  background-color: rgba(237, 137, 54, var(--bg-opacity));\n  align-self: center;\n  margin-left: 0.75rem;\n  height: 0.5px;\n}\n@media (min-width: 768px) {\nform .form_subtitle {\n    grid-column: span 2 / span 2;\n}\n}\n@media (min-width: 1024px) {\nform .form_subtitle {\n    grid-column: span 3 / span 3;\n}\n}", ""]);
 
 // exports
 
@@ -6398,14 +6554,14 @@ var render = function() {
         "div",
         {
           staticClass:
-            "max-w-4xl px-0 md:px-4 lg:px-6 flex flex-wrap items-center justify-center py-8"
+            "max-w-4xl px-2 md:px-4 lg:px-6 flex flex-wrap items-center justify-center py-8"
         },
         [
           _c(
             "h1",
             {
               staticClass:
-                "text-2xl font-medium text-blue-800 border-b border-gray-500 pb-2 w-full"
+                "text-2xl font-medium text-blue-800 pb-2 w-full text-center"
             },
             [_vm._v("New Employee Registration")]
           ),
@@ -6415,7 +6571,7 @@ var render = function() {
             {
               ref: "emp_frm",
               staticClass:
-                "w-full py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 row-gap-6 col-gap-2",
+                "w-full py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-2",
               on: {
                 submit: function($event) {
                   $event.preventDefault()
@@ -6428,22 +6584,18 @@ var render = function() {
               }
             },
             [
+              _vm._m(0),
+              _vm._v(" "),
               _c(
                 "div",
                 {
                   staticClass:
-                    "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
                 },
                 [
-                  _c(
-                    "label",
-                    {
-                      staticClass:
-                        "text-gray-600 text-sm font-medium mb-1 pl-1",
-                      attrs: { for: "first_name" }
-                    },
-                    [_vm._v("First Name")]
-                  ),
+                  _c("label", { attrs: { for: "first_name" } }, [
+                    _vm._v("First Name")
+                  ]),
                   _vm._v(" "),
                   _c("input", {
                     directives: [
@@ -6483,15 +6635,9 @@ var render = function() {
                     "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
                 },
                 [
-                  _c(
-                    "label",
-                    {
-                      staticClass:
-                        "text-gray-600 text-sm font-medium mb-1 pl-1",
-                      attrs: { for: "middle_name" }
-                    },
-                    [_vm._v("Middle Name")]
-                  ),
+                  _c("label", { attrs: { for: "middle_name" } }, [
+                    _vm._v("Middle Name")
+                  ]),
                   _vm._v(" "),
                   _c("input", {
                     directives: [
@@ -6530,15 +6676,9 @@ var render = function() {
                     "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
                 },
                 [
-                  _c(
-                    "label",
-                    {
-                      staticClass:
-                        "text-gray-600 text-sm font-medium mb-1 pl-1",
-                      attrs: { for: "last_name" }
-                    },
-                    [_vm._v("Last Name")]
-                  ),
+                  _c("label", { attrs: { for: "last_name" } }, [
+                    _vm._v("Last Name")
+                  ]),
                   _vm._v(" "),
                   _c("input", {
                     directives: [
@@ -6577,15 +6717,9 @@ var render = function() {
                     "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
                 },
                 [
-                  _c(
-                    "label",
-                    {
-                      staticClass:
-                        "text-gray-600 text-sm font-medium mb-1 pl-1",
-                      attrs: { for: "starting_date" }
-                    },
-                    [_vm._v("Starting Date")]
-                  ),
+                  _c("label", { attrs: { for: "starting_date" } }, [
+                    _vm._v("Starting Date")
+                  ]),
                   _vm._v(" "),
                   _c("input", {
                     directives: [
@@ -6619,15 +6753,9 @@ var render = function() {
                     "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
                 },
                 [
-                  _c(
-                    "label",
-                    {
-                      staticClass:
-                        "text-gray-600 text-sm font-medium mb-1 pl-1",
-                      attrs: { for: "employment_type" }
-                    },
-                    [_vm._v("Employment Type")]
-                  ),
+                  _c("label", { attrs: { for: "employment_type" } }, [
+                    _vm._v("Employment Type")
+                  ]),
                   _vm._v(" "),
                   _c(
                     "select",
@@ -6668,25 +6796,27 @@ var render = function() {
                         _vm._v("Please Select")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "1" } }, [
+                      _c("option", { attrs: { value: "hourly" } }, [
                         _vm._v("Hourly")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "2" } }, [
-                        _vm._v("Hourly")
+                      _c("option", { attrs: { value: "salary" } }, [
+                        _vm._v("Salary")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "3" } }, [
+                      _c("option", { attrs: { value: "contract" } }, [
                         _vm._v("Contract")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "4" } }, [_vm._v("Term")]),
+                      _c("option", { attrs: { value: "term" } }, [
+                        _vm._v("Term")
+                      ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "5" } }, [
+                      _c("option", { attrs: { value: "internship" } }, [
                         _vm._v("Internship")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "6" } }, [
+                      _c("option", { attrs: { value: "work_placement" } }, [
                         _vm._v("Work Placement")
                       ])
                     ]
@@ -6701,15 +6831,9 @@ var render = function() {
                     "flex flex-wrap flex-col items-stretch justify-start  col-span-1"
                 },
                 [
-                  _c(
-                    "label",
-                    {
-                      staticClass:
-                        "text-gray-600 text-sm font-medium mb-1 pl-1",
-                      attrs: { for: "sin_number" }
-                    },
-                    [_vm._v("SIN Number: 9 Digits")]
-                  ),
+                  _c("label", { attrs: { for: "sin_number" } }, [
+                    _vm._v("SIN Number: 9 Digits")
+                  ]),
                   _vm._v(" "),
                   _c("input", {
                     directives: [
@@ -6748,6 +6872,801 @@ var render = function() {
                 "div",
                 {
                   staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "position",
+                      placeholder: "Position"
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "gender" } }, [_vm._v("Gender")]),
+                  _vm._v(" "),
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.gender,
+                          expression: "gender"
+                        }
+                      ],
+                      staticClass:
+                        "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                      attrs: { required: "", type: "text", id: "gender" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.gender = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c("option", { attrs: { value: "", default: "" } }, [
+                        _vm._v("Please Select")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "male" } }, [
+                        _vm._v("Male")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "female" } }, [
+                        _vm._v("Female")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "na" } }, [
+                        _vm._v("Don't want to specify")
+                      ])
+                    ]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "dob" } }, [
+                    _vm._v("Birth Date")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.dob,
+                        expression: "dob"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: { required: "", type: "date", id: "dob" },
+                    domProps: { value: _vm.dob },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.dob = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1 lg:col-span-2"
+                },
+                [
+                  _c("label", { attrs: { for: "address" } }, [
+                    _vm._v("Address")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.address,
+                        expression: "address"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "address",
+                      placeholder: "Address"
+                    },
+                    domProps: { value: _vm.address },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.address = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "province" } }, [
+                    _vm._v("State/Province")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.province,
+                        expression: "province"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "province",
+                      placeholder: "State/Province"
+                    },
+                    domProps: { value: _vm.province },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.province = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "city" } }, [_vm._v("City")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.city,
+                        expression: "city"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "city",
+                      placeholder: "City"
+                    },
+                    domProps: { value: _vm.city },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.city = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "zip" } }, [_vm._v("Zip")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.zip,
+                        expression: "zip"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "zip",
+                      placeholder: "Zip"
+                    },
+                    domProps: { value: _vm.zip },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.zip = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "phone" } }, [_vm._v("Phone")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.phone,
+                        expression: "phone"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "tel",
+                      id: "phone",
+                      placeholder: "Phone"
+                    },
+                    domProps: { value: _vm.phone },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.phone = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "email" } }, [_vm._v("Email")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.email,
+                        expression: "email"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "email",
+                      id: "email",
+                      placeholder: "Email"
+                    },
+                    domProps: { value: _vm.email },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.email = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(3),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "branch_address" } }, [
+                    _vm._v("Branch Address")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.branch_address,
+                        expression: "branch_address"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "branch_address",
+                      placeholder: "Branch Address"
+                    },
+                    domProps: { value: _vm.branch_address },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.branch_address = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "branch_city" } }, [
+                    _vm._v("Branch City")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.branch_city,
+                        expression: "branch_city"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "branch_city",
+                      placeholder: "Branch City"
+                    },
+                    domProps: { value: _vm.branch_city },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.branch_city = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "branch_province" } }, [
+                    _vm._v("Branch State/Province")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.branch_province,
+                        expression: "branch_province"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "branch_province",
+                      placeholder: "Branch State/Province"
+                    },
+                    domProps: { value: _vm.branch_province },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.branch_province = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "branch_postal_code" } }, [
+                    _vm._v("Branch Postal Code")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.branch_postal_code,
+                        expression: "branch_postal_code"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "branch_postal_code",
+                      placeholder: "Branch Postal Code"
+                    },
+                    domProps: { value: _vm.branch_postal_code },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.branch_postal_code = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "transit" } }, [
+                    _vm._v("Transit Code")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.transit,
+                        expression: "transit"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "transit",
+                      placeholder: "Transit Code"
+                    },
+                    domProps: { value: _vm.transit },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.transit = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "institution_number" } }, [
+                    _vm._v("Institution Number")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.institution_number,
+                        expression: "institution_number"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "institution_number",
+                      placeholder: "Institution Number"
+                    },
+                    domProps: { value: _vm.institution_number },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.institution_number = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1"
+                },
+                [
+                  _c("label", { attrs: { for: "account_number" } }, [
+                    _vm._v("Account Number")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.account_number,
+                        expression: "account_number"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "account_number",
+                      placeholder: "Account Number"
+                    },
+                    domProps: { value: _vm.account_number },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.account_number = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(4),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1 md:col-span-2 lg:col-span-3"
+                },
+                [
+                  _c("label", { attrs: { for: "q_u_l_b" } }, [
+                    _vm._v("Quote you live by :")
+                  ]),
+                  _vm._v(" "),
+                  _c("textarea", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.q_u_l_b,
+                        expression: "q_u_l_b"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "q_u_l_b",
+                      placeholder: "Quote you live by"
+                    },
+                    domProps: { value: _vm.q_u_l_b },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.q_u_l_b = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1 md:col-span-2 lg:col-span-3"
+                },
+                [
+                  _c("label", { attrs: { for: "t_w_t_d_y" } }, [
+                    _vm._v("Three Words to describe yourself :")
+                  ]),
+                  _vm._v(" "),
+                  _c("textarea", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.t_w_t_d_y,
+                        expression: "t_w_t_d_y"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "t_w_t_d_y",
+                      placeholder: "Three Words to describe yourself"
+                    },
+                    domProps: { value: _vm.t_w_t_d_y },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.t_w_t_d_y = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex flex-wrap flex-col items-stretch justify-start col-span-1 md:col-span-2 lg:col-span-3"
+                },
+                [
+                  _c("label", { attrs: { for: "s_b" } }, [
+                    _vm._v("Short Biography :")
+                  ]),
+                  _vm._v(" "),
+                  _c("textarea", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.s_b,
+                        expression: "s_b"
+                      }
+                    ],
+                    staticClass:
+                      "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+                    attrs: {
+                      required: "",
+                      type: "text",
+                      id: "s_b",
+                      placeholder: "Short Biography"
+                    },
+                    domProps: { value: _vm.s_b },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.s_b = $event.target.value
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(5),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
                     "flex flex-wrap flex-row items-center justify-center col-span-1 md:col-span-2 lg:col-span-3 mt-4"
                 },
                 [
@@ -6780,7 +7699,88 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form_subtitle" }, [
+      _c("span", [_vm._v("01.")]),
+      _vm._v(" "),
+      _c("span", [_vm._v("Personal Information")]),
+      _vm._v(" "),
+      _c("span")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form_subtitle" }, [
+      _c("span", [_vm._v("02.")]),
+      _vm._v(" "),
+      _c("span", [_vm._v("Location")]),
+      _vm._v(" "),
+      _c("span")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form_subtitle" }, [
+      _c("span", [_vm._v("03.")]),
+      _vm._v(" "),
+      _c("span", [_vm._v("Contact Information")]),
+      _vm._v(" "),
+      _c("span")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form_subtitle" }, [
+      _c("span", [_vm._v("04.")]),
+      _vm._v(" "),
+      _c("span", [_vm._v("Banking Information")]),
+      _vm._v(" "),
+      _c("span")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form_subtitle" }, [
+      _c("span", [_vm._v("05.")]),
+      _vm._v(" "),
+      _c("span", [_vm._v("Background Information")]),
+      _vm._v(" "),
+      _c("span")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "flex flex-wrap flex-col items-stretch justify-start col-span-1 md:col-span-2 lg:col-span-3"
+      },
+      [
+        _c("label", { attrs: { for: "image" } }, [_vm._v("Upload Image")]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "py-1 px-2 rounded bg-gray-100 border border-gray-400",
+          attrs: { required: "", type: "file", id: "image", accept: "image/*" }
+        })
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -6810,12 +7810,16 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "menu" }, [
-      _c("a", { attrs: { href: "#app" } }, [
+      _c("a", { attrs: { href: "https://blabbly.com/" } }, [
         _vm._v("\n        Blabbly Website\n    ")
       ]),
       _vm._v(" "),
-      _c("a", { attrs: { href: "#contact" } }, [
+      _c("a", { attrs: { href: "https://blabbly.com/contact-2/" } }, [
         _vm._v("\n        Contact\n    ")
+      ]),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "mailto:smit@blabbly.com" } }, [
+        _vm._v("\n        Contact Admin\n    ")
       ])
     ])
   }

@@ -1,10 +1,13 @@
 <template>
     <div class="menu" >
-        <a href="#app" >
+        <a href="https://blabbly.com/" >
             Blabbly Website
         </a>
-        <a href="#contact">
+        <a href="https://blabbly.com/contact-2/">
             Contact
+        </a>
+        <a href="mailto:smit@blabbly.com">
+            Contact Admin
         </a>
     </div>
 </template>
